@@ -4,3 +4,14 @@
 // `nodeIntegration` is turned off. Use `preload.js` to
 // selectively enable features needed in the rendering
 // process.
+
+
+document.getElementById('body').addEventListener('mouseenter', function() {
+    console.log('MOUSEENTER')
+    document.getElementById('hover').innerHTML='MOUSEENTER';
+})
+
+document.getElementById('body').addEventListener('mouseout', function() {
+    console.log('MOUSEOUT')
+    document.getElementById('hover').innerHTML='MOUSEOUT';
+})
